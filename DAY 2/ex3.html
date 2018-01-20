@@ -1,0 +1,20 @@
+<button>Enter</button>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+</p>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+// console.log($)
+// console.log(jQuery)
+$(document).ready(function(){
+	// console.log($("button"));
+	$("button").click(function(){
+		// console.log( $("p") );
+		// $("p").css("background","gray");
+		// $("p").width(500);
+		// $("p").height(400);
+		//chain method
+		$("p").css("background","gray").height(400).width(200);
+	});
+});
+</script>

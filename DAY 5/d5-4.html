@@ -1,0 +1,37 @@
+<button>enter</button>
+<input type="text" class="txt">
+
+<input type="checkbox" class="chk">
+<input type="password" class="txt">
+
+
+
+<script src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// body...
+		// setter
+		// $(".txt").val(2000)
+
+
+		// getter
+		// data= $(".txt").val()
+		// alert(data)
+
+		$(".chk").change(function() {
+			// body...
+			console.log("test")
+
+			ans=$(this).is(":checked")
+			// console.log(ans)
+			if(ans==true){
+				$(".txt").attr("type","text");
+
+			}
+			else{
+				$(".txt").attr("type","password")
+			}
+		})
+
+	})
+</script>

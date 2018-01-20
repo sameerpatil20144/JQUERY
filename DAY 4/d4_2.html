@@ -1,0 +1,28 @@
+<style>
+	.colordata{
+		background: gray;
+		font-size:30px;
+		color:green;
+	}
+</style>
+<div>HELLO</div>
+<button class="btn1">Apply</button>
+<button class="btn2">Remove</button>
+<button class="btn3">Toggle</button>
+
+<script src="jquery-3.2.1.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		// body...
+		$(".btn1").click(function(){
+			$("div").addClass("colordata")
+		})
+		$(".btn2").click(function(){
+			$("div").removeClass("colordata")
+		})
+		$(".btn3").click(function(){
+			$("div").toggleClass("colordata")
+		})
+	})
+</script>

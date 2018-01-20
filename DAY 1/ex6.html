@@ -1,0 +1,24 @@
+<button class="btn1">HIDE PARA</button>
+<ul>
+	<li>test1 </li>
+	<li>test1 </li>
+	<li>test1 </li>
+	<li>test1 </li>
+	<li>test1 </li>
+	<li>test1 </li>
+</ul>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(".btn1").click(function(){
+		// $("ul li").css("background","gray")
+		// $("ul li:first").css("background","gray")
+		// $("ul li:last").css("background","gray")
+		// $("ul li:odd").css("background","gray")
+		// $("ul li:even").css("background","gray")
+		// $("ul li:eq(2)").css("background","gray")
+		// $("ul li:gt(2)").css("background","gray")
+		$("ul li:lt(2)").css("background","gray")
+	})
+});
+</script>

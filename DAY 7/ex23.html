@@ -1,0 +1,62 @@
+<input type="text" id="x1" placeholder="Enter name">
+<input type="text" id="x2" placeholder="Enter age">
+<button class="btn">Enter</button>
+<div class="msg"></div>
+
+</hr>
+<div class="msg1"></div>
+<button class="btn1">Get Enter</button>
+
+</hr>
+
+<!-- <div class="msg2"></div> -->
+<br/>
+<button class="btn2">Get EnterJSON</button>
+<table border="1px solid" class="msg2"></table>
+
+<script src="jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript">
+	$(function () {
+		// body...
+		$(".btn").click(function () {
+			// body...
+			data1=$("#x1").val();
+			data2=$("#x2").val();
+			// alert(data2)
+		$.post("action.php","name="+data1+"&age="+data2,function (xyz) {
+			// body...
+			$(".msg").html(xyz);
+		})	
+
+		})
+		$(".btn1").click(function () {
+			// body...
+			$.get("user.php",function (xyz) {
+				// body...
+				$(".msg1").html(xyz);
+			})
+		})
+		$(".btn2").click(function () {
+			// body...
+			$.getJSON("Fb.json",function (xyz) {
+                // console.log(xyz)
+                str="";
+				$.each(xyz,function (k,v) {
+                    // console.log(k)
+                    // console.log(v)
+                    // console.log(v.name)
+                    str=str+"<tr>"
+                    str=str+"<td>"+v.name+"</td>"
+                    str=str+"<td>"+v.profile+"</td>"
+                    str=str+"<td>"+v.location+"</td>"
+                    str=str+"</tr>"				
+
+                  
+ 				})
+ 				// console.log(str)
+ 				$(".msg2").html(str);
+			})
+		})	
+	})
+</script>

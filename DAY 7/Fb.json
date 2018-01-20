@@ -1,0 +1,24 @@
+
+{
+"user1":
+{
+	"name":"suraj mahajan",
+	"profile":"Software Engineer",
+     "location":"mumbai"
+
+},
+"user2":
+{
+	"name":"Dhiraj mahajan",
+	"profile":"Electrical Engineer",
+     "location":"mumbai"
+
+},
+"user3":
+{
+	"name":"sudesh patil",
+	"profile":"BSC",
+     "location":"Bhusawal"
+
+}
+}

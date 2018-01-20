@@ -1,0 +1,100 @@
+<input type="checkbox" class="chkall">
+<button class="delall">Delete All</button>
+<div class="mailbox">
+	<div class="box">
+		<span><input type="checkbox" class="chk"></span>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</span>
+		<span>
+			<button class="del">delete</button>
+		</span>
+		
+	</div>
+	<div class="box">
+		<span><input type="checkbox" class="chk"></span>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</span>
+		<span>
+			<button class="del">delete</button>
+		</span>
+		
+	</div>
+	<div class="box">
+		<span><input type="checkbox" class="chk"></span>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</span>
+		<span>
+			<button class="del">delete</button>
+		</span>
+		
+	</div>
+	<div class="box">
+		<span><input type="checkbox" class="chk"></span>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</span>
+		<span>
+			<button class="del">delete</button>
+		</span>
+		
+	</div>
+		<div class="box">
+		<span><input type="checkbox" class="chk"></span>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</span>
+		<span>
+			<button class="del">delete</button>
+		</span>
+		
+	</div>
+		<div class="box">
+		<span><input type="checkbox" class="chk"></span>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</span>
+		<span>
+			<button class="del">delete</button>
+		</span>
+		
+	</div> 
+	<style type="text/css">
+		.mailbox{width: 600px;margin: auto}
+		.box{padding:10px 0;border:1px solid #eee;}
+		.box span:last-child{float: right;}
+	</style>
+	<script src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// body...
+		$(".box:even").css("background","#eee")
+		$(".box:odd").css("background","#ccc")
+		// alert(1)
+		$(".del").click(function() {
+			// body...
+		// 	if(confirm("want to delete?"))
+		// 	{
+		// 		$(this).parent().parent().fadeOut(1000)
+		// 	}
+		// })
+		// $(".chkall").change(function() {
+		// 	// body...
+		// 	ans = $(this).is(":checked")
+		// 	// alert(ans)
+		// 	if(ans){
+		// 		$(".chk").prop("checked",true)
+		// 	}
+		// 	else{
+		// 		$(".chk").prop("checked",false)
+		// 	}
+		// })
+		
+		// $(".delall").click(function() {
+		// 	// body...
+		// 	// alert(11)
+			$(".box").each(function(x) {
+				// body...
+				// alert(x);
+				ans = $(this).children("span").children(".chk").is(":checked")
+				// alert(ans)
+				if(ans){
+					$(this).fadeOut(1000)
+				}
+			})
+		})
+
+	})
+</script>
+	
+</div>

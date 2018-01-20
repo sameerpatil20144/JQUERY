@@ -1,0 +1,16 @@
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		// body...
+		rec=[100,200,300]
+		console.log(rec)
+		data=""
+		$.each(rec,function(position,val){
+			// console.log(postion)
+			// console.log(val)
+			data = data +"<li>"+val+ "</li>"
+		})
+		// console.log(data)
+		$("#uldata").html(data)
+	})
+</script>

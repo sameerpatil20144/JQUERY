@@ -1,0 +1,23 @@
+<div id="divdata">test</div>
+<button class="btn">Enter</button>
+<button class="btn1">Remove attr</button>
+<script src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// body...
+		$(".btn").click(function(){
+			//getter
+			ans=$("div").attr("id")
+			// alert (ans)
+			// setter
+			$("div").attr("class","hello")
+			ans1=$("div").width()
+			// // alert(ans1)
+			$("div").width(300)
+		})
+		$(".btn1").click(function(){
+			$("div").removeAttr("id")
+
+		})
+	})
+</script>

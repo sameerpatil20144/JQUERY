@@ -1,0 +1,23 @@
+<button>enter</button>
+<div style="border:1px solid;width:100px;height: 100px;background: lightblue"></div>
+<script src="jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		// body...
+		// jquery effect
+		$("button").click(function(){
+			$("div").animate({
+				"margin-left":"200px",
+				"margin-top":"200px",
+				
+				"border-radius":"50%",
+				"background":"blue",
+
+
+
+
+			},4000)
+		})
+	})
+</script>

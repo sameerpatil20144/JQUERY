@@ -1,0 +1,30 @@
+<ul>
+	<li>Test 1</li>
+	<li>Test 2</li>
+	<li>Test 3</li>
+	<li>Test 4</li>
+	<li>Test 5</li>
+	<li>Test 6</li>
+	<li>Test 7</li>
+</ul>
+<button class="btn">Enter</button>
+<script src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// body...
+		$("ul li:odd").css("background","gray")
+		$("ul li:even").css("background","lightgray")
+
+		$(".btn").click(function () {
+			// body...
+			// $("ul li").first().css("background","lightgreen")
+			// $("ul li").last().css("background","lightgreen")
+			// $("ul li:eq(4)").next().css("background","lightgreen")
+			// $("ul li").eq(4).siblings().css("background","lightgreen")
+			// $("ul").children("li").css("background","lightgreen")
+			// $("ul").parent().css("border","2px solid green")
+			// $("ul").parents().css("border","2px solid green")
+			// $("li").parentsUntil("html").css("border","2px solid green")
+		})
+	})
+</script>

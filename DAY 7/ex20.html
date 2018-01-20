@@ -1,0 +1,53 @@
+<div class="accordion">
+	<h1>Section 1</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     <h1>Section 2</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h1>Section 3</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<style type="text/css">
+	.accordion
+	{
+		width: 400px;
+		margin: auto;
+	}
+	*.accordion h1,.accordion p
+	{
+		border: 1px solid #eee;
+		margin: 0;
+		padding-top: 10px 0;
+	}
+	.accordion h1
+	{
+		cursor: pointer;
+	}
+</style>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script>
+	$(function () {
+		// body...
+		$(".accordion p").hide()
+		$(".accordion p").first().show();
+		$(".accordion h1").click(function () {
+			// body...
+			$(this).next().slideToggle();
+		})
+         
+	})
+</script>

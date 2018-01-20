@@ -1,0 +1,42 @@
+<ul>
+	<li>lorem ipsum dolor </li>
+	<li>lorem ipsum dolor </li>
+	<li>lorem ipsum dolor </li>
+	<li>lorem ipsum dolor </li>
+	<li>lorem ipsum dolor </li>
+	<li>lorem ipsum dolor </li>
+	<li>lorem ipsum dolor </li>
+	<li>lorem ipsum dolor </li>
+	<li>lorem ipsum dolor </li>
+	
+</ul>
+<button class="btn">Enter</button>
+<script src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		// body...
+		$("ul li:odd").css("background","gray")
+		$("ul li:even").css("background","lightgray")
+
+		$(".btn").click(function(){
+			// $("ul li").first().css("background","lightgreen")
+			// $("ul li:first").css("background","lightgreen")
+			// $("ul li").last().css("background","lightgreen")
+			// $("ul li").eq(3).css("background","lightgreen")
+
+			// //traverse Function
+			// $("ul li:first").next().css("background","lightgreen")
+			// $("ul li:first").nextAll().css("background","lightgreen")
+			// $("ul li:last").prev().css("background","lightgreen")
+			// $("ul li:last").prevAll().css("background","lightgreen")
+			// $("ul li").eq(4).css("background","lightgreen")
+			// $("ul li").eq(4).siblings().css("background","lightgreen")
+			// $("ul").children("li").css("background","lightgreen")
+			// $("ul").parent().css("border","2px solid green")
+			// $("ul").parents().css("border","2px solid green")
+			$("li").parentsUntil("html").css("border","2px solid green")
+			})
+
+
+	})
+</script>

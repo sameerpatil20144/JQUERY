@@ -1,0 +1,57 @@
+<P>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</P>
+<input type="checkbox" class="chk">
+<button>Enter</button>
+<script src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// body...
+		$("button").click(function() {
+			// // body...
+			// ans=$("p").is(":visible")
+			// // alert(ans)
+			// if(ans){
+			// 	$("p").slideUp()
+			// }
+			// else{
+			// 	$("p").slideDown()
+			// }
+
+			$("p").slideToggle()
+
+			$("p").css("opacity",0.3)
+
+			$("p").fadeTo(2000,0.3)
+
+			ans=$("chk").is(":checked")
+			alert(ans)
+			if(!ans){//prop fun used to act forcefully for all filters like visible,checked etc
+				$(".chk").prop("checked",true)
+			}
+
+
+			x=10
+			if(x=="10"){//check only value
+				console.log("ok")
+			}
+			if(x==="10"){//check value and type(string/boolean/no...etc)
+				console.log("ok")	
+			}
+			else{
+				console.log("wrong")
+			}
+
+
+			if(x!=="10"){
+				console.log("wrong")	
+			}
+
+		})
+	})
+</script>
